@@ -2,7 +2,7 @@
   // Server authentication info
   "servers": [
     {
-      "host": "52.91.147.146",
+      "host": "www.davedavedave.net",
       "username": "ubuntu",
       //"host": "52.3.251.5",
       //"username": "ec2-user",
