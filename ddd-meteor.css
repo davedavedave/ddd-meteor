@@ -3,6 +3,11 @@
  */
 
 /* Links */
+/*@import url(https://fonts.googleapis.com/css?family=Roboto:700,900,500,400);*/
+/*@import url(https://fonts.googleapis.com/css?family=Indie+Flower);*/
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway+Dots);
+
 a,
 a:focus,
 a:hover {
@@ -11,16 +16,16 @@ a:hover {
 
 i {
     font-size: 98px;
+    z-index: -1;
 }
 
 
 #icon-popper i {
     text-decoration: none;
-    -webkit-transition: .3s ease-in-out;
-    -webkit-transition: .3s ease-in-out;
-    -moz-transition: .3s ease-in-out;
-    -o-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
+    -webkit-transition:  -webkit-transform 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 
 #icon-popper i:hover {
@@ -29,6 +34,7 @@ i {
     -moz-transform: scale(1.5);
     -o-transform: scale(1.5);
     transform: scale(1.5);
+    color: white;
 }
 
 /*
@@ -38,10 +44,12 @@ i {
 html,
 body {
     height: 100%;
-    background-color: #003;
-}
-body {
     color: #a9a9af;
+    background-color: #003;
+    /*font-family: 'Roboto', sans-serif;*/
+    /*font-family: 'Indie Flower', cursive;*/
+    font-family: 'Raleway Dots', cursive;
+    /*font-family: 'Amatic SC', cursive;*/
     text-align: center;
     text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
@@ -68,20 +76,12 @@ body {
     margin-left: auto;
 }
 /* Cover  buttons */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-    color: #333;
-        /*text-shadow: none; /!* Prevent inheritence from `body` *!/*/
-    background-color: #fff;
-    border: 1px solid #fff;
-}
 .button {
     display: inline-block;
     padding: 1em;
     background-color: #114;
     text-decoration: none;
-    color: white;
+    color: #aa99ff;
 }
 
 /* Padding for spacing */
@@ -94,8 +94,11 @@ body {
  * Header
  */
 .masthead-brand {
+
     margin-top: 10px;
     margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 64px;
 }
 
 .masthead-nav > li {
@@ -107,7 +110,7 @@ body {
 .masthead-nav > li > a {
     padding-right: 0;
     padding-left: 0;
-    font-size: 16px;
+    font-size: 32px;
     font-weight: bold;
     color: #114; /* IE8 proofing */
     color: #a9a9a9;
